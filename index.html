@@ -1,0 +1,341 @@
+<!-- NUTRIDRI - ANDREIA NUTRICIONISTA HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andreia, estudante de nutrição especializada em emagrecimento saudável baseado em evidências científicas">
+    <title>NutriDri - Andreia Nutricionista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR COM 10 ABAS OBRIGATÓRIAS -->
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <h2 class="logo">NutriDri</h2>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#inicio" class="nav-link active" role="menuitem" aria-current="page"> Início</a></li>
+                <li role="none"><a href="#sobre" class="nav-link" role="menuitem"> Sobre</a></li>
+                <li role="none"><a href="#servicos" class="nav-link" role="menuitem"> Serviços</a></li>
+                <li role="none"><a href="#calculadora" class="nav-link" role="menuitem"> Calculadora</a></li>
+                <li role="none"><a href="#blog" class="nav-link" role="menuitem"> Blog</a></li>
+                <li role="none"><a href="#depoimentos" class="nav-link" role="menuitem"> Depoimentos</a></li>
+                <li role="none"><a href="#faq" class="nav-link" role="menuitem"> FAQ</a></li>
+                <li role="none"><a href="#portfolio" class="nav-link" role="menuitem"> Portfólio</a></li>
+                <li role="none"><a href="#recursos" class="nav-link" role="menuitem"> Recursos</a></li>
+                <li role="none"><a href="#contato" class="nav-link" role="menuitem"> Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-container" id="main-content">
+        
+        <!-- 1️⃣ INÍCIO -->
+        <section id="inicio" class="section hero-section">
+            <div class="hero">
+                <div class="text-content">
+                    <h1>Bem-vindo à <span>NutriDri</span></h1>
+                    <p class="tagline">Transforme sua relação com a alimentação através de orientações baseadas em evidências científicas</p>
+                    <p class="description">
+                        Com a Andreia, você terá um acompanhamento nutricional personalizado, moderno e eficiente. Aprender a comer bem nunca foi tão fácil!
+                    </p>
+                    <a href="#contato" class="btn">Entre em Contato</a>
+                </div>
+                <div class="photo-container">
+                    <img src="img/img-foto-inicio.jpg" >
+                </div>
+            </div>
+        </section>
+
+        <!-- 2️⃣ SOBRE -->
+        <section id="sobre" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Sobre Andreia</h2>
+                <div class="about-content">
+                    <p>Andreia é uma <strong>estudante de nutrição em formação</strong>, apaixonada por promover saúde através de alimentação baseada em evidências científicas. Está se especializando em <strong>emagrecimento saudável</strong> e sempre atualizada com as pesquisas mais recentes da área.</p>
+                    
+                    <p>Sua missão é ajudar pessoas a transformarem sua relação com a comida, proporcionando bem-estar através de orientações fundamentadas em estudos científicos atualizados e experiência prática.</p>
+                    
+                    <p>Com uma abordagem humanizada e baseada em dados, Andreia oferece consultorias que vão além de dietas restritivas, focando em mudanças sustentáveis e educação nutricional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3️⃣ SERVIÇOS -->
+        <section id="servicos" class="section">
+            <div class="container">
+                <h2 class="section-title">Meus Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3> Consulta Inicial</h3>
+                        <p>Avaliação completa do seu perfil nutricional, histórico de saúde e objetivos para criar um plano personalizado.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3> Plano Nutricional</h3>
+                        <p>Desenvolvimento de um plano alimentar customizado baseado nas suas necessidades, preferências e estilo de vida.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3> Acompanhamento Online</h3>
+                        <p>Consultas periódicas via vídeo chamada com flexibilidade de horários e suporte contínuo via WhatsApp.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3> Educação Nutricional</h3>
+                        <p>Orientações sobre como ler rótulos, escolher alimentos saudáveis e manter uma alimentação equilibrada.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3> Receitas Saudáveis</h3>
+                        <p>Sugestões de receitas práticas, deliciosas e nutricionalmente balanceadas para sua rotina diária.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3> Monitoramento Contínuo</h3>
+                        <p>Acompanhamento regular com ajustes no plano conforme sua evolução e necessidades mudam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4️⃣ CALCULADORA IMC -->
+        <section id="calculadora" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Calculadora IMC</h2>
+                <div class="calculator">
+                    <form class="calculator-form">
+                        <div class="form-group">
+                            <label for="peso">Peso (kg)</label>
+                            <input type="number" id="peso" placeholder="Ex: 70" step="0.1" required>
+                            <span class="help-text" id="peso-help">Digite seu peso em quilogramas</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="altura">Altura (m)</label>
+                            <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01" required>
+                            <span class="help-text" id="altura-help">Digite sua altura em metros (Ex: 1.70)</span>
+                        </div>
+                        <button type="submit" class="btn">Calcular IMC</button>
+                    </form>
+                    <div id="resultado" class="result-container hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5️⃣ BLOG -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title">Blog de Nutrição</h2>
+                <div class="blog-posts">
+                    <article class="post">
+                        <div class="post-header">
+                            <h3> Evidências Científicas em Nutrição </h3>
+                        </div>
+                        <div class="post-content">
+                            <p>A nutrição baseada em evidências integra dados científicos atualizados, experiência clínica e preferências do paciente. Esta abordagem garante recomendações fundamentadas em pesquisas rigorosas e comprovadas.</p>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-header">
+                            <h3> Alimentação Equilibrada </h3>
+                        </div>
+                        <div class="post-content">
+                            <p>Uma alimentação saudável baseia-se em variedade, moderação e equilíbrio. Consuma pelo menos 400g de frutas e vegetais por dia, prefira cereais integrais, mantenha-se hidratado e durma bem.</p>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-header">
+                            <h3> Mitos vs Verdades </h3>
+                        </div>
+                        <div class="post-content">
+                            <p><strong>VERDADE:</strong> Não pular refeições mantém o metabolismo ativo. <strong>VERDADE:</strong> Arroz com feijão é uma proteína completa. <strong>MITO:</strong> Eliminar carboidratos completamente emagrece.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6️⃣ DEPOIMENTOS -->
+        <section id="depoimentos" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">O que Dizem de Mim</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"A Andreia me ajudou muito com orientações baseadas em estudos nutricionais. Aprendi sobre alimentação e pude trazer a minha padaria!"</p>
+                        <p class="testimonial-author">— Dono de uma Padaria</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Mesmo sendo estudante, ela demonstra muito conhecimento e sempre explica com base nos estudos verdadeiros. Super recomendo!"</p>
+                        <p class="testimonial-author">— Jonatãn Fonseca</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7️⃣ FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <h3> Como é realizada a primeira consulta?</h3>
+                        <p>A primeira consulta é uma avaliação completa onde analisamos seu histórico de saúde, hábitos alimentares e objetivos. A partir disso, elaboro um plano nutricional personalizado baseado em evidências científicas.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3> Quanto tempo leva para ver resultados?</h3>
+                        <p>O tempo varia conforme o objetivo de cada pessoa. Geralmente, para ver resultados significativos, recomendamos um acompanhamento de 3 a 6 meses, com consultas periódicas para ajustes necessários.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3> Vocês oferecem consultas online?</h3>
+                        <p>Sim! Oferecemos consultas e acompanhamento totalmente online, com flexibilidade de horários e comunicação contínua via WhatsApp ou email para suas dúvidas.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3> Como funciona a Calculadora de IMC?</h3>
+                        <p>A Calculadora de IMC usa a fórmula científica: Peso (kg) / Altura (m)². O resultado classifica sua categoria de peso e fornece recomendações personalizadas baseadas em evidências.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3> Posso fazer acompanhamento durante dieta restritiva?</h3>
+                        <p>Recomendamos sempre uma abordagem equilibrada e sustentável. Dietas muito restritivas não funcionam a longo prazo. Nosso foco é ensinar você a comer bem para a vida toda.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3> Qual é o valor das consultas?</h3>
+                        <p>Os valores variam conforme o tipo de serviço escolhido. Oferecemos pacotes personalizados para diferentes necessidades. Entre em contato para conhecer nossas opções e valores especiais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8️⃣ PORTFÓLIO -->
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Histórias de Sucesso</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3> Perda de Peso Sustentável</h3>
+                        <p><strong>Resultado:</strong> Cliente perdeu 8kg em 4 meses com acompanhamento nutricional. Manteve uma alimentação equilibrada e saudável sem restrições extremas.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3> Ganho de Energia</h3>
+                        <p><strong>Resultado:</strong> Paciente reorganizou seus hábitos alimentares, melhorou energia, disposição e bem-estar geral em apenas 2 meses de acompanhamento.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3> Otimização de Desempenho</h3>
+                        <p><strong>Resultado:</strong> Atleta amador otimizou sua nutrição para melhor desempenho, recuperação muscular e composição corporal com abordagem baseada em evidências.</p>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <h3> Hábitos Saudáveis</h3>
+                        <p><strong>Resultado:</strong> Cliente conquistou seu peso ideal e aprendeu a mantê-lo com estratégias comportamentais e uma relação saudável com a comida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9️⃣ RECURSOS -->
+        <section id="recursos" class="section">
+            <div class="container">
+                <h2 class="section-title">Recursos Disponíveis</h2>
+                <div class="recursos-content">
+                    <div class="recurso-item">
+                        <h3> Tabela de Alimentos</h3>
+                        <p>Acesso a tabela completa de alimentos com valores calóricos, proteínas, carboidratos e gorduras para orientar suas escolhas diárias.</p>
+                    </div>
+
+                    <div class="recurso-item">
+                        <h3> Planos Semanais</h3>
+                        <p>Modelos de planos alimentares semanais equilibrados que você pode adaptar conforme suas preferências, alergias e rotina.</p>
+                    </div>
+
+                    <div class="recurso-item">
+                        <h3> Artigos Científicos</h3>
+                        <p>Compilação de estudos científicos recentes sobre nutrição, saúde e bem-estar baseados em evidências e pesquisas atualizadas.</p>
+                    </div>
+
+                    <div class="recurso-item">
+                        <h3> Vídeos Educativos</h3>
+                        <p>Série de vídeos sobre tópicos importantes: como ler rótulos, alimentos funcionais, receitas saudáveis, preparação de refeições e mais.</p>
+                    </div>
+
+                    <div class="recurso-item">
+                        <h3> Comunidade Online</h3>
+                        <p>Acesso a grupo exclusivo de clientes para trocar experiências, receitas, dúvidas e se motivar com outras pessoas no mesmo caminho.</p>
+                    </div>
+
+                    <div class="recurso-item">
+                        <h3> Suporte Contínuo</h3>
+                        <p>Atendimento via WhatsApp, email e vídeo chamada para responder suas dúvidas a qualquer momento e acompanhar sua evolução.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🔟 CONTATO -->
+        <section id="contato" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📍 Localização</h3>
+                            <p>São Paulo - SP, Brasil</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>deia.bossan@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📱 WhatsApp</h3>
+                            <p>+55 (11) 97780-1549</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕐 Horário de Atendimento</h3>
+                            <p>Seg-Sex: 08h às 18h<br>Sábado: 09h às 13h</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div id="form-success" class="form-success">✅ Mensagem enviada com sucesso! Entraremos em contato em breve.</div>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(11) 9 8765-4321" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" placeholder="Conte-me sobre seu objetivo nutricional..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; 2025 NutriDeia - Todos os direitos reservados. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
